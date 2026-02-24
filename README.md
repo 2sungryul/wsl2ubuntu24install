@@ -1,6 +1,6 @@
 # wsl2ubuntu24.04install
 
-#how to install wsl2-ubuntu24.04
+# how to install wsl2-ubuntu24.04 on PC
 
 ```bash
 > wsl --update
@@ -12,7 +12,7 @@
 > wsl --install -d Ubuntu-24.04
 ```
 
-# how to uninstall ubuntu24.04
+# how to uninstall ubuntu24.04 on WSL2
 ```bash
 wsl --list --verbose -> 설치된 배포와 상세정보 출력
 wsl --unregister Ubuntu-24.04 -> 등록 취소하고 파일시스템삭제
