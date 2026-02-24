@@ -1,4 +1,4 @@
-# wsl2ubuntu24.04install
+# wsl2 ubuntu24.04 install
 
 # how to install wsl2-ubuntu24.04 on PC
 
