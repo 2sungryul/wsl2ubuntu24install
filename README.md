@@ -3,12 +3,14 @@
 # how to install wsl2-ubuntu24.04 on PC
 
 ```bash
+# 터미널 실행
 > wsl --update
 > wsl --status
 > wsl --shutdown
 > wsl --list --running
 > exit
-> wsl --list --online
+# 터미널 종료후 다시실행
+> wsl --list --online 
 > wsl --install -d Ubuntu-24.04
 ```
 
