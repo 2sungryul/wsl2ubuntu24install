@@ -22,3 +22,22 @@
 6. 터미널의 목록에서 없어져야 함 -> 삭제 안되면 설정에서 프로필 직접삭제
 ```
 
+# how to install SSH
+```bash
+1. SSH server 설치
+$ sudo apt update
+$ sudo apt install openssh-server
+
+2. SSH 설정파일(/etc/ssh/sshd_config)에서 아래처럼 수정 
+- PasswordAuthentication no -> PasswordAuthentication yes
+$ sudo vi /etc/ssh/sshd_config
+
+3. openSSH 재가동/상시가동/가동확인
+$ sudo systemctl restart ssh -> 설정 변경 후 재시동
+$ sudo systemctl enable ssh -> 부팅시 자동실행
+$ sudo systemctl status ssh -> active(running) 확인할 것
+
+4. openSSH 동작확인
+$ sudo apt install net-tools -> net-tools 설치
+$ netstat -ant -> 로컬 컴퓨터의 모든 IP주소(0.0.0.0)의 22번포트가 열려 있어야 함(LISTEN 상태)
+```
